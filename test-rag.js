@@ -47,7 +47,7 @@ console.log("Chunks stored:", await collection.count());
 // Step 4 — Search
 
  // Step 4 — Search
-const question = "What is the pdf about ?";
+const question = "What is devops ?";
 
 const results = await collection.query({
   queryTexts: [question],
