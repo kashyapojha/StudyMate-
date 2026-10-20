@@ -16,6 +16,18 @@ StudyMate is an AI-powered study assistant that uses **Retrieval-Augmented Gener
 - **Document Processing:** PDF parsing
 - **Configuration:** Environment variables with dotenv
 
+## Configuration
+
+Create a root `.env` from [`.env.example`](./.env.example) and set
+`GROQ_API_KEY` to your Groq API key. For the frontend, create
+`frontend/.env` from [`frontend/.env.example`](./frontend/.env.example).
+`VITE_API_BASE_URL` should point to the backend; it defaults to
+`http://localhost:5000`.
+
+Keep real `.env` files local. They are ignored by Git; only the example
+templates should be committed. ChromaDB is currently configured to use
+`localhost:8000` by the backend.
+
 ## How It Works
 1. Load and extract text from a PDF.
 2. Split the extracted text into smaller chunks.

@@ -44,8 +44,6 @@ await collection.upsert({
 console.log("Chunks stored:", await collection.count());
 
 
-// Step 4 — Search
-
  // Step 4 — Search
 const question = "What is devops ?";
 
