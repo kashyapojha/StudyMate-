@@ -19,10 +19,7 @@ StudyMate is an AI-powered study assistant that uses **Retrieval-Augmented Gener
 ## Configuration
 
 Create a root `.env` from [`.env.example`](./.env.example) and set
-`GROQ_API_KEY` to your Groq API key. For the frontend, create
-`frontend/.env` from [`frontend/.env.example`](./frontend/.env.example).
-`VITE_API_BASE_URL` should point to the backend; it defaults to
-`http://localhost:5000`.
+`GROQ_API_KEY` to your Groq API key.
 
 Keep real `.env` files local. They are ignored by Git; only the example
 templates should be committed. ChromaDB is currently configured to use
